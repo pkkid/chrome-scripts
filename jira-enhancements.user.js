@@ -88,9 +88,7 @@
       // Add Menu Item to Show Hidden Values
       console.log('[PK] Show hidden values when clicking Show more');
       var showMore = contains('span', /^Show more$/)[0];
-      console.log(showMore);
       showMore.addEventListener('click', function() {
-        console.log('CLICK!!!');
         for (let i=0; i<noneValues.length; i++) {
           noneValues[i].style.display = 'block';
         }
