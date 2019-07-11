@@ -165,7 +165,7 @@
       var key = $.trim(parts.split(':')[0]).replace(' ','_');
       if (DONT_SHORTEN.indexOf(key) == -1) { key = key.split('_')[0]; }
       var vals = parts.split(':')[1].split(',').map($.trim);
-      if (!(key in items)) { items[key] = {vals:[], op:':', neg:''}}
+      if (!(key in items)) { items[key] = {vals:[], op:':', neg:''}; }
       for(i=0; i<vals.length; i++) {
         vals[i] = vals[i].replace('\n', '');
         if (vals[i].startsWith('(does not contain the string)')) { vals[i] = $.trim(vals[i].split(')')[1]); items[key].neg = '-'; }

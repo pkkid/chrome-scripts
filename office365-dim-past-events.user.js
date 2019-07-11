@@ -26,7 +26,7 @@
           event.style.opacity = 0.3;
         }
       }
-    };
+    }
   };
 
   // Check for past events every minute

@@ -14,7 +14,7 @@
       return Array.prototype.filter.call(elements, function(element){
         return RegExp(text).test(element.textContent);
       });
-    }
+    };
   
   
     if (document.querySelector('body').classList.contains('aui-layout')) {
@@ -84,7 +84,7 @@
       console.log('--- [PK] New Bug View Changes ---');
   
       console.log('[PK] Adding Custom Stylesheet');
-      var sheet = document.createElement('style')
+      var sheet = document.createElement('style');
       sheet.innerHTML = `
         .iGyYHq .dAtTjS { float:left; width:150px; padding-top:12px; }  /* Sidebar headers */
         .iGyYHq .igPjYz { padding-top: 12px; padding-bottom: 12px; }    /* Status chooser */
