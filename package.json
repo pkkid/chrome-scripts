@@ -1,6 +1,6 @@
 {
   "name": "chrome-user-scripts",
   "scripts": {
-    "webserver": "echo 'Running webserver at http://localhost:8000' && python -m SimpleHTTPServer 8000"
+    "webserver": "http-server -c5"
   }
 }
