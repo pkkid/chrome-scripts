@@ -24,7 +24,7 @@
     var sheet = document.createElement('style');
     sheet.innerHTML = `
       div.description.markup .imgs {
-        width: 75%;
+        width: 320px;
         float: right;
       }
       div.description.markup .imgs img {
