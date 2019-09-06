@@ -10,25 +10,33 @@
     // Create a custom stylesheet
     console.log('[PK] Move image to top of description..');
     var details = document.querySelectorAll('div.description.markup')[0];
+    var container = document.createElement('div');
+    container.className = "imgs";
+    details.prepend(container);
+
     var imgs = details.querySelectorAll('img');
     for (var i=0; i<imgs.length; i++) {
       var link = imgs[i].parentElement;
-      details.prepend(link);
+      container.prepend(link);
     }
 
     console.log('[PK] Adding Custom Stylesheet..');
     var sheet = document.createElement('style');
     sheet.innerHTML = `
-      div.description.markup img {
-        height: 150px;
-        border: 1px solid #ddd;
-        margin-right: 10px;
+      div.description.markup .imgs {
+        width: 75%;
         float: right;
-        transform: all 0.5s ease;
-        box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+      }
+      div.description.markup .imgs img {
+        max-height: 300px;
+        max-width: 300px;
+        border: 3px solid #ddd;
+        border-radius: 3px;
+        margin: 5px;
+        float: right;
       }
       div.description.markup img:hover {
-        border: 1px solid #999;
+        border: 3px solid #999;
       }
     `;
     document.body.appendChild(sheet);
