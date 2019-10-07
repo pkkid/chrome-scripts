@@ -48,18 +48,8 @@
       return null;
     };
 
-    var
-    _components,
-    _reporter,
-    description,
-    mainPanel,
-    status,
-    sidePanel,
-    sidePanelValues,
-    labelCls,
-    peopleCls,
-    valueCls,
-    developmentCls;
+    var _components, _reporter, description, mainPanel, status, sidePanel,
+      sidePanelValues, labelCls, peopleCls, valueCls, developmentCls;
 
     // SidePanel - Spelunk through the DOM to find a few key class names
     try {
@@ -128,20 +118,6 @@
     } catch(err) {
       console.log('[PK] ERROR: '+ err.message);
     }
-
-    // Require Doubleclick to Edit Description..
-    // console.log('[PK] --> Require doubleclick to edit description..');
-    // var descriptionBox = findParent(contains('h2', /^Description$/)[0], '');
-    // var descriptionClone = descriptionBox.cloneNode(true);
-    // descriptionBox.parentNode.replaceChild(descriptionClone, descriptionBox);
-
-    // Doubleclick to Undo everything!
-    // document.addEventListener('dblclick', function() {
-    //   console.log('[PK] --> Undo description..');
-    //   descriptionClone.parentNode.replaceChild(descriptionBox, descriptionClone);
-    //   console.log('[PK] --> Show Hidden feilds..');
-    //   for (let i=0; i<hidden.length; i++) { hidden[i].style.display = 'block'; }
-    // });
 
   };
 
