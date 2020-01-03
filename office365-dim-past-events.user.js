@@ -2,6 +2,7 @@
 // @name         office365-dim-past-events
 // @description  Dim past events in Office 365 Calendar.
 // @include      https://outlook.office.com/calendar/*
+// @include      https://outlook.office365.com/calendar/*
 // @version      2019.07.10
 // ==/UserScript==
 
