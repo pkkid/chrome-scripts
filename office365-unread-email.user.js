@@ -4,6 +4,7 @@
 // @include        https://outlook.office.com/mail/inbox*
 // @include        https://outlook.office.com/mail/*
 // @version        2019.07.10
+// @grant          none
 // ==/UserScript==
 
 (function() {
