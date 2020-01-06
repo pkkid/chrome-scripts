@@ -3,6 +3,7 @@
 // @description    New view Jira enhancements
 // @include        https://*.atlassian.net/browse/*
 // @version        2019.07.10
+// @grant          none
 // ==/UserScript==
 (function() {
   'use strict';
